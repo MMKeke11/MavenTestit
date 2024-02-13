@@ -1,0 +1,169 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Laskin</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example.Laskin5.src.laskin</a>
+</div>
+
+<h1>Coverage Summary for Class: Laskin (org.example.Laskin5.src.laskin)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Laskin</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    90.9%
+  </span>
+  <span class="absValue">
+    (10/11)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    54.5%
+  </span>
+  <span class="absValue">
+    (12/22)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example.Laskin5.src.laskin;
+&nbsp;
+<b class="fc">&nbsp;public class Laskin {</b>
+&nbsp;
+&nbsp;    private int tulos;  	// Muuttuja tulokselle
+&nbsp;
+&nbsp;    public void nollaa() {  // Nollaa tulosmuuttuja
+<b class="fc">&nbsp;        tulos = 0;</b>
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    public int annaTulos() {
+<b class="fc">&nbsp;        return tulos;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void lisaa(int n) {
+<b class="fc">&nbsp;        tulos = tulos + n;</b>
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    public void vahenna(int n) {
+<b class="fc">&nbsp;        tulos = tulos - n;</b>
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+<b class="nc">&nbsp;    public void kerro(int n) { tulos = tulos * n;</b>
+&nbsp;        // Ei vielä toteutettu
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    public void jaa(int n) {
+<b class="pc">&nbsp;        if (n==0) throw new ArithmeticException(&quot;Nollalla ei voi jakaa&quot;);</b>
+&nbsp;    	// if (n==0) throw new ArithmeticException(&quot;Nollalla ei voi jakaa&quot;);
+<b class="fc">&nbsp;        tulos = tulos / n;</b>
+&nbsp;
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    public void nelio(int n) {
+<b class="fc">&nbsp;        tulos = (int) Math.pow(n, 2);</b>
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    public void neliojuuri(int n) {
+<b class="pc">&nbsp;        if (n &lt; 0) throw new ArithmeticException(&quot;Negatiiviselle luvulle ei voi laskea neliöjuurta&quot;);</b>
+<b class="fc">&nbsp;    	tulos =  (int)Math.sqrt(n);</b>
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    public void virtaON() {
+&nbsp;        // Tähän voisi laittaa alkutoimet
+<b class="fc">&nbsp;        tulos = 0;</b>
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    public void virtaOFF() {
+<b class="fc">&nbsp;        tulos = 0;</b>
+&nbsp;        // Tähän voisi laittaa lopputoimet
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-02-13 16:49</div>
+</div>
+</body>
+</html>
