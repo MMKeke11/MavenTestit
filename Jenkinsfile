@@ -8,7 +8,7 @@ pipeline {
  stages {
  stage('Checkout') {
  steps {
- git branch: 'master', credentialsId: 'ADirin', url: 'https://github.com/ADirin/FarToCel_Fall2024.git'
+ git branch: 'FarToCel', credentialsId: '249b052c-c57f-4224-ac66-466ffca32a96', url: 'https://github.com/MMKeke11/MavenTestit'
  }
  }
  stage('Build') {
