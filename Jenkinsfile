@@ -2,6 +2,7 @@ pipeline {
  agent any
  tools {
   maven "maven_home"
+ }
  environment {
  PATH = "${env.PATH};C:\\Windows\\System32" // Update the PATH to include the directory of cmd.exe
  GIT_CREDENTIALS = credentials('249b052c-c57f-4224-ac66-466ffca32a96')
