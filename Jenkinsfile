@@ -1,7 +1,7 @@
 pipeline {
  agent any
  tools {
-  maven "maven_home"
+  maven "3.9.6"
  }
  environment {
  PATH = "${env.PATH};C:\\Windows\\System32" // Update the PATH to include the directory of cmd.exe
