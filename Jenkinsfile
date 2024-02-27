@@ -28,7 +28,7 @@ pipeline {
  // Publish JUnit test results
  junit '**/target/surefire-reports/TEST-*.xml'
  // Generate JaCoCo code coverage report
-
+ jacoco(execPattern: '**/target/jacoco.exec')
  }
  }
  }
